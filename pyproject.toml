@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "focus-timer"
+version = "0.1.0"
+description = "Pomodoro-style research focus timer that logs sessions by project to CSV."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+focus-timer = "focus_timer.cli:main"
+
+[tool.setuptools]
+packages = ["focus_timer"]
